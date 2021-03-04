@@ -72,3 +72,8 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+Content/Brushify/DistanceMeshes/Tropical_02/Textures/T_Normalmap.uasset
+Content/Brushify/DistanceMeshes/Tropical_03/Textures/T_Normalmap.uasset
+Content/Brushify/DistanceMeshes/Tropical_04/Textures/T_Normalmap.uasset
+Content/Brushify/Meshes/Cliffs/Meshes/Cliff_Tropical/Cliff_Tropical_01/Textures/T_Cliff_Huge_01_D.uasset
+Content/Brushify/Meshes/Cliffs/Meshes/Cliff_Tropical/Cliff_Tropical_01/Textures/T_Cliff_Huge_01_N.uasset
