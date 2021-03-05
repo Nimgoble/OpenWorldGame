@@ -8,9 +8,50 @@ public class OpenWorldGame : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
+		PublicDependencyModuleNames.AddRange
+		(
+			new string[] 
+			{ 
+				"Core", 
+				"CoreUObject", 
+				"Engine", 
+				"InputCore",
+				"Networking",
+				"Sockets",
+				/*"OnlineSubsystem",
+				"OnlineSubsystemUtils",*/
+				"AssetRegistry",
+				"AIModule",
+				"HeadMountedDisplay",
+				"UMG",
+				"HTTP",
+				"Json",
+				"CinematicCamera"
+			}
+		);
 
-		PrivateDependencyModuleNames.AddRange(new string[] { "PlayFab", "PlayFabCpp", "PlayFabCommon" });
+		PrivateDependencyModuleNames.AddRange
+		(
+			new string[] 
+			{
+				"CoreUObject",
+				"InputCore",
+				"Networking",
+				"Sockets",
+				"OnlineSubsystem",
+                /*"OnlineSubsystemNull",*/
+                /*"OnlineSubsystemUtils",*/
+				"Slate",
+				"SlateCore",
+				"GameplayDebugger",
+				"HTTP",
+				"Json",
+				"CinematicCamera",
+				"PlayFab", 
+				"PlayFabCpp", 
+				"PlayFabCommon" 
+			}
+		);
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
