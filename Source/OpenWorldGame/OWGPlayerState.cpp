@@ -29,11 +29,12 @@ bool AOWGPlayerState::ServerSetPlayFabId_Validate(const FString &playFabId)
 void AOWGPlayerState::ServerSetPlayFabId_Implementation(const FString &playFabId)
 {
 	this->PlayFabId = playFabId;
+	UE_LOG(LogTemp, Warning, TEXT("Server PlayerState %s: PlayFabId set to: %s"), *GetName(), *PlayFabId);
 }
 
 void AOWGPlayerState::OnReplicated_PlayFabId()
 {
-	UE_LOG(LogOWG, Warning, TEXT("PlayerState %s: PlayFabId replicated: %s"), *GetName(), *PlayFabId);
+	UE_LOG(LogTemp, Warning, TEXT("Client PlayerState %s: PlayFabId replicated: %s"), *GetName(), *PlayFabId);
 }
 
 void AOWGPlayerState::CopyProperties(APlayerState* PlayerState)
