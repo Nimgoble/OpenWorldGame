@@ -22,6 +22,9 @@ public:
 	void ClientSetPlayFabId(FString playFabId);
 	UFUNCTION(Server, Reliable, WithValidation)
 	void ServerSetPlayFabId(const FString &playFabId);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "OWG|Player")
+	void ServerPlayFabIdSet();
 protected:
 	UFUNCTION()
 	void OnReplicated_PlayFabId();

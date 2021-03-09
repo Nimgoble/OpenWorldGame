@@ -30,6 +30,7 @@ void AOWGPlayerState::ServerSetPlayFabId_Implementation(const FString &playFabId
 {
 	this->PlayFabId = playFabId;
 	UE_LOG(LogTemp, Warning, TEXT("Server PlayerState %s: PlayFabId set to: %s"), *GetName(), *PlayFabId);
+	ServerPlayFabIdSet();
 }
 
 void AOWGPlayerState::OnReplicated_PlayFabId()
