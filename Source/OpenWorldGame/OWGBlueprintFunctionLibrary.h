@@ -30,4 +30,10 @@ public:
 		UPlayFabRuntimeSettings* rSettings = GetMutableDefault<UPlayFabRuntimeSettings>();
 		rSettings->DeveloperSecretKey = "";
 	}
+
+	UFUNCTION(BlueprintCallable, Category = "OWG")
+	static bool IsActorInsideActor(AActor* actorThatMayBeInside, AActor* actorWeMayBeInside, bool onlyCollidingComponents = true);
+
+	UFUNCTION(BlueprintCallable, Category = "OWG")
+	static bool IsComponentInsideComponent(UPrimitiveComponent* componentThatMayBeInside, UPrimitiveComponent* componentWeMayBeInside);
 };
